@@ -84,7 +84,7 @@ const Home: NextPage = () => {
             {langs[lang]['about']}
           </motion.a>
         </Link>
-        <div className="fixed top-0 left-1">
+        <div className="block sm:hidden fixed top-0 left-1">
           <Hamburger size={22} />
         </div>
         <Link href="/projects">
