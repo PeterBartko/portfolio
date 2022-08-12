@@ -112,7 +112,7 @@ const Home: NextPage = () => {
               <CircleFlag countryCode="sk" height={20} width={20} />
             )}
           </button>
-          <a href="https://github.com/PeterBartko" target="_blank">
+          <a href="https://github.com/PeterBartko" rel="noreferrer" target="_blank">
             <FaGithub size={20} className="hover:text-blue-500 transition-colors" />
           </a>
         </div>
