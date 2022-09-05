@@ -9,3 +9,16 @@
 canvas {
   transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+@layer components {
+  .grad-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r animate-hue from-blue-400 to-cyan-500
+  }
+  body::-webkit-scrollbar {
+    @apply w-2 dark:bg-black bg-white
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-zinc-300 dark:bg-zinc-300/50
+  }
+}
