@@ -39,16 +39,22 @@ const ProjectsSection: React.FC<Props> = () => {
       <section className="flex flex-wrap justify-center gap-[4rem] sm:gap-5 !mt-8">
         {projects?.map(({ name, demo, stack, github }) => (
           <div key={name} className="w-[380px] space-y-2 rounded-md">
-            <div className="w-full h-[260px] relative rounded-md overflow-hidden">
+            <div className="w-full h-[260px] relative">
               <a href={demo} target="_blank" rel="noopener noreferrer">
-                <Image src={`/thumbnails/${name}.png`} width="380" height="260" alt="" />
+                <Image
+                  src={`/thumbnails/${name}.png`}
+                  width="380"
+                  height="260"
+                  alt="thumbnail"
+                  className="rounded-md"
+                />
               </a>
             </div>
 
             <h3 className="text-2xl text-center font-bold dark:text-pink-300 text-pink-400 w-full">
               {langs[lang][name]}
             </h3>
-            <span className="flex items-center gap-1">
+            <span className="flex items-center flex-wrap gap-1">
               {stack?.map(s => (
                 <p
                   key={s}
